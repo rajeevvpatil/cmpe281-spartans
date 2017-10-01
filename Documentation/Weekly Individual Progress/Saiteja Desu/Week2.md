@@ -1,0 +1,2 @@
+
+Installed MongoDb in my local machine and tried out creating collections and basic commands like inserting, updating, removing records from collections. Also, re-searched about Node js scripting language.
