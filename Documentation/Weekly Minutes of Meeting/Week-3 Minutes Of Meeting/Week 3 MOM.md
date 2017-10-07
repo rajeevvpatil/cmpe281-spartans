@@ -13,6 +13,7 @@
 1. Finalised on using MEAN stack.
 2. Discussed on features which we want to add to our website.
 3. Discussed on what domains are to be used in the project
+4. Links and other useful resources were shared among team members
 ---
 ### Things to do this week:
 1. Each team member must read up on MEAN.
