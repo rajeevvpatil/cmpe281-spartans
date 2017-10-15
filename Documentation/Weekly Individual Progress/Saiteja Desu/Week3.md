@@ -1,0 +1,1 @@
+Researched about MEAN stack, Node.js, Mongo db and how it works.
