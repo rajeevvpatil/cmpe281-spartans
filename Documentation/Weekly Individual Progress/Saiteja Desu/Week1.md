@@ -1,0 +1,1 @@
+Researched about NoSQL database types and about its advantages and disadvantages. Also, looked into types of Agile practices.
