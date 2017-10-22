@@ -1,1 +1,1 @@
-Checked the resources shared by our team and working on features which needed for our modules
+Checked the resources shared by our team and working on features which needed for our modules. Divided individual module as part of the team discussion. And, Working on my module which is User session logs.
