@@ -13,5 +13,5 @@
   making sure that there was clear communication and also by ensuring that other core values were maintained.
   **Anirudh Devulapalli**
 
-**SIMPLICITY:** As per our team discussion, we decided to keep every aspect of our project to be simple and everyone is following it. Also, as part of weekly meeting discussion, we decided to divide our work and start working on project and everyone took responsibility in gaining knowledge about each challenging thing in our project and explaining it to everyone
+**SIMPLICITY:** As per our team discussion, we decided to keep every aspect of our project to be simple and everyone is following it. Also, as part of weekly meeting discussion, we decided to divide our work and start working on project and everyone took responsibility in gaining knowledge about each challenging thing in our project and explaining it to everyone, so everyone need not to search for everything, which are the things I observed as part of simplicity factor.             
 **Saiteja Desu**
