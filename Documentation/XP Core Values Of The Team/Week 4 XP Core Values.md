@@ -9,4 +9,7 @@
 **Akhil Bhavirisetty**
                
                
-               
+                  
+ **SIMPLICITY:** As per our team discussion, we decided to keep every aspect of our project to be simple and everyone is following it. Also, as part of weekly meeting discussion, we decided to divide our work and start working on project and everyone took responsibilty in gaining knowledge about each challenging thing in our project and explaining it to everyone, so everyone need not to search for everything, which are the things I observed as part of simplicity factor.             
+**Saiteja Desu**   
+            
