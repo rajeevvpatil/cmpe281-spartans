@@ -15,3 +15,6 @@
 
 **SIMPLICITY:** As per our team discussion, we decided to keep every aspect of our project to be simple and everyone is following it. Also, as part of weekly meeting discussion, we decided to divide our work and start working on project and everyone took responsibility in gaining knowledge about each challenging thing in our project and explaining it to everyone, so everyone need not to search for everything, which are the things I observed as part of simplicity factor.             
 **Saiteja Desu**
+
+**OPENNESS:** We as a team, have decided to be open about all our progress, and failures. If one of is get's stuck on a problem, instead of keeping it to himself, the problem will be shared with the whole team and the team will tackle it with an open mind. The team is not at all judgemental towards each other, which sets a really good tone for a healthy work environment. 
+**Rajeev Patil**
