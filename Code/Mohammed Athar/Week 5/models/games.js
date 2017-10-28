@@ -31,3 +31,11 @@ var Games = module.exports = mongoose.model('Games', gameSchema);
 module.exports.getGames= function(callback, limit){
     Games.find(callback).limit(limit);
 }
+
+module.exports.getGamesById= function(id, callback){
+    Games.findById(id, callback);
+}
+
+module.exports.addGames= function(games, callback){
+    Games.create(games, callback);
+}
