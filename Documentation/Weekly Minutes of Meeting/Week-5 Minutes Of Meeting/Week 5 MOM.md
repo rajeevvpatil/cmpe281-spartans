@@ -19,9 +19,13 @@
    Task Assigned were as follows:
    
    Akhil Bhavirisetti: Recommendation part in the website.
+   
    Mohammed Athar: Adding the Product Catalog
+   
    Sai Teja Desu: User sessions
+   
    Rajeev Vilas Patil: Shopping Cart
+   
    Anirudh Devulapalli: Financial Data
 ---
 ### Things to do next week:
