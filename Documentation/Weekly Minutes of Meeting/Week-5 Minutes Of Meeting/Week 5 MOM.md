@@ -15,7 +15,9 @@
 ---
 ### Things to do this week:
 1. Each members were assigned the task and have to code their part.
+   
    Task Assigned were as follows:
+   
    Akhil Bhavirisetti: Recommendation part in the website.
    Mohammed Athar: Adding the Product Catalog
    Sai Teja Desu: User sessions
