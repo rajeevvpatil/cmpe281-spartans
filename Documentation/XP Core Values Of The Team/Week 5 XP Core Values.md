@@ -5,3 +5,5 @@
 **Communication:** This week in the meeting we distributed the task and assigned everyone their task. So now everyone is writing the code for the task they are assigned. After every 2 days we are just having a small meeting in which we discuss the issues the other person have and try toresolve it. So there is a proper communication between the team members to make sure no one is stuck at one point.
 
 **Mohammed Athar**
+
+**Respect:** Everyone is giving respect to everyone as per my observation during last week, team members are communicating very well in discussions considering every ones point into consideration and if there are any things needed to be changed, everyone is saying in a positive spirit as well as receiving the feedback in same spirit.
