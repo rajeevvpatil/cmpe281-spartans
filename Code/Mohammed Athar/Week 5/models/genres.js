@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var genreSchema = mongoose.Schema({
+var generSchema = mongoose.Schema({
     name:{
         type:String,
         required:true
@@ -11,9 +11,14 @@ var genreSchema = mongoose.Schema({
     }
 });
 
-var Genre = module.exports = mongoose.model('Genre', genreSchema);
+var Genre = module.exports = mongoose.model('Genres', generSchema);
 
 //Get Genres
 module.exports.getGeners = function(callback, limit){
     Genre.find(callback).limit(limit);
 }
+
+module.exports.addGener= function(geners, callback){
+    Genre.create(geners, callback);
+}
+
