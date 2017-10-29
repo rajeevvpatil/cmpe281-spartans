@@ -3,7 +3,7 @@ const driver = neo4j.driver("bolt://localhost:7687", neo4j.auth.basic("neo4j", "
 
 const session = driver.session();
 
-const personName = 'Akhil Bhavirisetty';
+const personName = 'Akhil Bhavirisettyy';
 const resultPromise = session.run(
   'CREATE (a:Person {name: $name}) RETURN a',
   {name: personName}
