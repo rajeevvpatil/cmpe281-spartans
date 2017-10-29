@@ -16,3 +16,4 @@ col.update(
   }, true);
   
   //REFERENCE:-http://mongodb.github.io/node-mongodb-native/schema/chapter10/
+// adds the product called videogame to the cart
