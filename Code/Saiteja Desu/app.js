@@ -18,7 +18,7 @@ var db = mongoose.connect('mongodb://localhost/UserLog', {
     useMongoClient: true,
     /* other options */
 });
-
+db.on('error', console.error.bind(console, 'connection error:'));
 
 var Schema = new mongoose.Schema({
     firstname : String,
