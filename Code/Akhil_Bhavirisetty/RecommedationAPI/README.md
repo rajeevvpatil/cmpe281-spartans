@@ -1,4 +1,5 @@
-# Recommendation for Movies.
+# Recommendation for GameCart.
 
-Currently this is the sample application taken as base. 
-We are going to modify the code based on our project requirements to complete the Recommendation for our project.
+This Recommendation API is used for enabling the recommendations functionality in the GameCart website.
+Currently the code base is created based on sample application taken as reference from internet.
+We will modify the code based on our project requirements.
