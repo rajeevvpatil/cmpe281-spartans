@@ -1,0 +1,11 @@
+var col = db.getSisterDB("items").products;
+col.insert({
+  , _id: "1"
+  , name: "VIDEO GAME 1"
+  , description: "HACKnSLASH RPG CCG"
+  , quantity: 99
+  , price: 50
+});
+
+//REFERENCE:-http://mongodb.github.io/node-mongodb-native/schema/chapter10/
+//adds an item called video game 1 from a different db called items
