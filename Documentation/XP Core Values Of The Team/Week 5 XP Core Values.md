@@ -9,3 +9,7 @@
 **Respect:** Everyone is giving respect to everyone as per my observation during last week, team members are communicating very well in discussions considering every ones point into consideration and if there are any things needed to be changed, everyone is saying in a positive spirit as well as receiving the feedback in same spirit.
 
 **Saiteja Desu**
+
+**COURAGE**: Working together as a team is giving us the courage to learn new things and face all challenges. Although all team members are trying their best to solve problems on their own, having a supportive team that will help him is really reassuring. The work environment is reassuring and stressfree.
+
+**Rajeev Patil**
