@@ -8,9 +8,9 @@ var server = http.createServer(function (req, res) {
 
 var app = express();
 
-app.use(express.bodyParser());
-app.use(express.methodOverride());
-app.use(app.router);
+//app.use(express.bodyParser());
+//app.use(express.methodOverride());
+//app.use(app.router);
 
 mongoose.connect('UserLog:http://localhost:27017/UserLog');
 
