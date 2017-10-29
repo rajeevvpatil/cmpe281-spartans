@@ -1,0 +1,18 @@
+var quantity = 1;
+var userId = 1;
+var productId = "1";
+
+var col = db.getSisterDB("item").carts;
+col.update(
+    { _id: userId, status: 'active' }
+  , {
+      $set: { modified_on: new Date() }
+    , $push: { products: {
+        _id: productId
+      , quantity: quantity
+      , name: "VIDEO GAME 1"
+      , price: 150
+    }}
+  }, true);
+  
+  //REFERENCE:-http://mongodb.github.io/node-mongodb-native/schema/chapter10/
