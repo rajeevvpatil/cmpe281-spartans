@@ -12,7 +12,12 @@ var app = express();
 //app.use(express.methodOverride());
 //app.use(app.router);
 
-mongoose.connect('UserLog:http://localhost:27017/UserLog');
+//mongoose.connect('UserLog:http://localhost:27017/UserLog');
+
+var db = mongoose.connect('mongodb://localhost/UserLog', {
+    useMongoClient: true,
+    /* other options */
+});
 
 
 var Schema = new mongoose.Schema({
@@ -33,7 +38,7 @@ var user = mongoose.model('user',Schema);
         createpswd : req.body.createpswd,
         confirmpswd : req.body.confirmpswd
     }).save(function (err,doc) {
-        if(err) res.json(err);
+        if(err) res.send('!!Error');
         else   res.send('Successfully inserted!!');
     });
 });
