@@ -1,0 +1,27 @@
+{
+  "name": "note_take",
+  "version": "1.0.0",
+  "description": "\"This API is to develop a note taking API\"",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyensjsu/cmpe281-spartans.git"
+  },
+  "author": "Akhil Bhavirisetty",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyensjsu/cmpe281-spartans/issues"
+  },
+  "homepage": "https://github.com/nguyensjsu/cmpe281-spartans#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongodb": "^2.2.33"
+  },
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  }
+}
