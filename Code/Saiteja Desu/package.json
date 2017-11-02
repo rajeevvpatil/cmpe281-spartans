@@ -10,8 +10,9 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "*",
+    "connect": "^3.6.5",
     "express": "^4.16.2",
-    "mongoose": "*",
+    "mongoose": "^4.12.6",
     "nodemon": "*"
   }
 }

@@ -2,9 +2,14 @@ var mongoose = require('mongoose');
 var express = require('express');
 var http = require('http');
 var fs = require('fs');
-var server = http.createServer(function (req, res) {
-    displayForm(res);
-});
+var connect = require('connect');
+
+var appconn = connect();
+
+appconn.use(displayForm);
+appconn.use(displayLoginForm);
+
+var server = http.createServer(appconn);
 
 var app = express();
 
@@ -42,7 +47,7 @@ var user = mongoose.model('User',Schema);
         else   res.send('Successfully inserted!!');
     });
 });
-
+/*
 var user = {
     "firstname": firstname,
     "lastname": lastname,
@@ -59,9 +64,9 @@ dbCollections.users.insert(user, function (err, users) {
         res.send('Successful');    // And forward to success page  --> angularjs/login.js
     }
 });
-
-function displayForm(res) {
-    fs.readFile('signupform.html', function (err, data) {
+*/
+function displayForm(req,res,next) {
+    fs.readFile('/Registration', function (err, data) {
         res.writeHead(200, {
             'Content-Type': 'text/html',
             'Content-Length': data.length
@@ -69,6 +74,18 @@ function displayForm(res) {
         res.write(data);
         res.end();
     });
+    next();
+}
+
+function displayLoginForm(req,res,next){
+    fs.readFile('Login.html',function (err, data) {
+        res.writeHead(200, {'Content-Type':'text/html',
+        'Content-Length': data.length
+        });
+        res.write(data);
+        res.end();
+    });
+    next();
 }
 
 server.listen(8000);
