@@ -12,7 +12,7 @@ var generSchema = mongoose.Schema({
 });
 
 var Genre = module.exports = mongoose.model('Geners', generSchema);
-
+//CRUD
 //Get Genres
 module.exports.getGeners = function(callback, limit){
     Genre.find(callback).limit(limit);
