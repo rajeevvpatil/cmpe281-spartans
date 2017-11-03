@@ -85,6 +85,7 @@ app.put('/api/games/:_id',function(req,res){
         res.json(games);
      });
     });
+//Delete Functionality
 app.delete('/api/geners/:_id',function(req,res){
     var id =req.params._id;
     Genre.removeGener(id,function(err,geners){
