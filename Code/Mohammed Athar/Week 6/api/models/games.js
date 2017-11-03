@@ -39,7 +39,7 @@ module.exports.getGamesById= function(id, callback){
 module.exports.addGames= function(games, callback){
     Games.create(games, callback);
 }
-
+//Update
 module.exports.updateGame= function(id,games,options, callback){
    var query={_id: id};
    var update = {
