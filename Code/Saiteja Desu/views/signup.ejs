@@ -1,0 +1,29 @@
+<html>
+<head>
+    <title><%= title %></title>
+</head>
+<body>
+<form action="/" method="post" enctype="multipart/form-data">
+    <fieldset>
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name" />
+        <br />
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" name="lastname" placeholder="Please enter your last name">
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email address" />
+        <br />
+        <label for="createpswd">Create Password:</label>
+        <input type="password" id="createpswd" name="Create Password" placeholder="Enter your password">
+        <br />
+        <label for="confirmpswd">Confirm your Password:</label>
+        <input type="password" id="confirmpswd" name="Re-type your Password" placeholder="Enter your password">
+        <br />
+        <input type="submit" value="Create Profile" />
+        <br />
+        <input type="button" value="Cancel" />
+    </fieldset>
+</form>
+</body>
+</html>
