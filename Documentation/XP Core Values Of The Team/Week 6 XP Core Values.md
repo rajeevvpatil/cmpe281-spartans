@@ -5,3 +5,7 @@
 **Simplicity:** During last meeting, when we were discussing the database structure, team members kept the structure as simple as possible. If anything is complicated in structure, we brainstormed the possible solution to keep it simple.
 
 **Saiteja Desu**
+
+**Communication:** To ensure there is no communication gap between the team members we meet regularly for short interval of time and two times in a week we had a meeting for long hours to troubleshoot each other problems. 
+
+**Mohammed Athar**
