@@ -3,7 +3,7 @@
     <title><%= title %></title>
 </head>
 <body>
-<form action="/" method="post" enctype="multipart/form-data">
+<form method="post" action="/signup">
     <fieldset>
         <label for="firstname">First Name:</label>
         <input type="text" id="firstname" name="firstname" placeholder="Please enter your first name" />
@@ -15,10 +15,10 @@
         <input type="email" id="email" name="email" placeholder="Enter your email address" />
         <br />
         <label for="createpswd">Create Password:</label>
-        <input type="password" id="createpswd" name="Create Password" placeholder="Enter your password">
+        <input type="password" id="createpswd" name="createpswd" placeholder="Enter your password">
         <br />
         <label for="confirmpswd">Confirm your Password:</label>
-        <input type="password" id="confirmpswd" name="Re-type your Password" placeholder="Enter your password">
+        <input type="password" id="confirmpswd" name="confirmpswd" placeholder="Enter your password">
         <br />
         <input type="submit" value="Create Profile" />
         <br />
