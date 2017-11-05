@@ -1,0 +1,21 @@
+Debian/Ubuntu Prerequisites
+Dependencies
+
+To install the required dependencies run the following apt-get commands:
+Shell
+
+"sudo apt-get update"
+"sudo apt-get install build-essential autoconf libncurses5-dev openssl libssl-dev fop xsltproc unixodbc-dev git"
+
+GUI Dependencies
+
+If you’re using a graphical environment and want to use Erlang’s GUI utilities, you will need to install additional dependencies.
+
+    Note on build output
+
+    These packages are not required for operation of a Riak node. Notes in the build output about missing support for wxWidgets can be safely ignored when installing Riak in a typical non-graphical server environment.
+
+To install packages for graphics support use the following apt-get command:
+Shell
+
+"sudo apt-get install libwxbase2.8 libwxgtk2.8-dev libqt4-opengl-dev"
