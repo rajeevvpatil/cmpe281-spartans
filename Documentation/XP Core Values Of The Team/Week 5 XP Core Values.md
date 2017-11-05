@@ -13,3 +13,7 @@
 **COURAGE**: Working together as a team is giving us the courage to learn new things and face all challenges. Although all team members are trying their best to solve problems on their own, having a supportive team that will help him is really reassuring. The work environment is reassuring and stressfree.
 
 **Rajeev Patil**
+
+**Simplicity** We as a team, have decided to be do what was required and no more or no less. This will maximize the value created for the investment made to date. The team is not at all judgemental towards each other and has decided that it will create something we are proud of and maintain it long term for reasonable costs. 
+
+**Anirudh Devulapalli**
