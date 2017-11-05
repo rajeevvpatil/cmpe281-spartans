@@ -1,0 +1,32 @@
+Installing on Debian/Ubuntu
+
+First make sure you have installed the necessary dependencies found in Debian/Ubuntu Prerequisites.
+
+Next download Basho’s patched version of Erlang.
+
+Using wget:
+Shell
+
+"wget http://s3.amazonaws.com/downloads.basho.com/erlang/otp_src_R16B02-basho10.tar.gz"
+
+Then unpack the download with:
+Shell
+
+"tar zxvf otp_src_R16B02-basho10.tar.gz"
+
+Next cd into the unpacked directory, build and install Erlang with:
+Shell
+
+"cd OTP_R16B02_basho10
+./otp_build autoconf
+./configure && make && sudo make install"
+
+Confirm Erlang installed to the correct location:
+Shell
+
+"which erl"
+
+And start Erlang from your terminal with:
+Shell
+
+"erl"
