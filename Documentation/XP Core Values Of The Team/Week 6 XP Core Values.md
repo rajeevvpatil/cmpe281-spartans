@@ -9,3 +9,7 @@
 **Communication:** To ensure there is no communication gap between the team members we meet regularly for short interval of time and two times in a week we had a meeting for long hours to troubleshoot each other problems. 
 
 **Mohammed Athar**
+
+**Respect:** Proper respect was maintained among the various team members, every member was valued and all their inputs were taken into consideration without any ridicule. Everyone contributes value even if it's simply enthusiasm and keeping up the morale. We understand and respect our individual weaknesses and help each other in getting better.
+
+**Anirudh Devulapalli**
