@@ -13,3 +13,7 @@
 **Respect:** Proper respect was maintained among the various team members, every member was valued and all their inputs were taken into consideration without any ridicule. Everyone contributes value even if it's simply enthusiasm and keeping up the morale. We understand and respect our individual weaknesses and help each other in getting better.
 
 **Anirudh Devulapalli**
+
+**Courage**: This week has been a little stressfull because of all the schoolwork from other courses as well. All team members are trying their best and having a supportive team is giving us the courage to manage time and work. The work environment is reassuring and stressfree, which is neccessary to be productive. 
+
+**Rajeev Patil**
