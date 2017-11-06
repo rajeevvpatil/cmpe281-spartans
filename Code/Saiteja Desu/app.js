@@ -5,6 +5,10 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var router = express.Router();
+
+
+mongoose.connect('mongodb://localhost:27017/UserLog');
 
 var index = require('./routes/index');
 var users = require('./routes/users');
@@ -28,7 +32,39 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/login', login);
-app.use('/signup', signup);
+app.use('/signup', index);
+
+
+var signup_schema = new mongoose.Schema({
+    firstname : String,
+    lastname  : String,
+    email     : String,
+    address   : String,
+    phone     : String,
+    createpswd: String,
+    confirmpswd: String
+});
+
+var Users = mongoose.model('Users', signup_schema);
+
+app.post('/signup', function (req,res) {
+    console.log('inside signup');
+    var myData = new Users(req.body);
+    console.log("Inside post" +myData);
+    console.log(
+        'you have reached inside create a user ',
+        JSON.stringify(req.body)
+    );
+    myData.save(function (err,myData) {
+        if(err){return next (err);}
+        res.send('Successfull');
+    });
+
+});
+
+
+
+
 
 /*
 // catch 404 and forward to error handler

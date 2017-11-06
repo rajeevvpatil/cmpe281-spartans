@@ -10,8 +10,10 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Game Cart' });
 });
 
-
-
+router.get('/signup', function(req, res, next) {
+    res.render('signup', { title: 'Sign Up Page:' });
+    console.log('inside GET signup');
+});
 
 
 
