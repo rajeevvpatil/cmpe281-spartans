@@ -16,7 +16,15 @@
         <br />
         <input type="submit" value="Login" />
         <br />
-        <input type="button" value="Cancel" />
+        <button name="redirect" onClick="redirect()">Sign Up </button>
+
+            <script type="text/javascript">
+                function redirect()
+                {
+                    var url = "http://localhost:8888/signup";
+                    window.location(url);
+                }
+            </script>
     </fieldset>
 </form>
 </body>
