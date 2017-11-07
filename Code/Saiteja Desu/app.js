@@ -6,6 +6,9 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var router = express.Router();
+var passport = require('passport');
+var flash    = require('connect-flash');
+var session      = require('express-session');
 
 
 mongoose.connect('mongodb://localhost:27017/UserLog');
@@ -29,9 +32,14 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(passport.initialize());
+app.use(passport.session()); // persistent login sessions
+app.use(flash()); // use connect-flash for flash messages stored in session
+
 app.use('/', index);
 app.use('/users', users);
-app.use('/login', login);
+app.use('/login', index);
 app.use('/signup', index);
 
 
