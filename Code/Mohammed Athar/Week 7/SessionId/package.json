@@ -1,0 +1,17 @@
+{
+  "name": "sessionid",
+  "version": "1.0.0",
+  "description": "module to create session id",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Athar",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.7.0",
+    "ejs": "^1.0.0",
+    "express": "^4.8.7",
+    "express-session": "^1.7.6"
+  }
+}
