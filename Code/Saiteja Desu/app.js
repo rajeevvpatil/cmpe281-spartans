@@ -28,7 +28,7 @@ app.set('view engine', 'ejs');
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -40,35 +40,9 @@ app.use(flash()); // use connect-flash for flash messages stored in session
 app.use('/', index);
 app.use('/users', users);
 app.use('/login', index);
-app.use('/signup', index);
+app.use('/signup', signup);
 
 
-var signup_schema = new mongoose.Schema({
-    firstname : String,
-    lastname  : String,
-    email     : String,
-    address   : String,
-    phone     : String,
-    createpswd: String,
-    confirmpswd: String
-});
-
-var Users = mongoose.model('Users', signup_schema);
-
-app.post('/signup', function (req,res) {
-    console.log('inside signup');
-    var myData = new Users(req.body);
-    console.log("Inside post" +myData);
-    console.log(
-        'you have reached inside create a user ',
-        JSON.stringify(req.body)
-    );
-    myData.save(function (err,myData) {
-        if(err){return next (err);}
-        res.send('Successfull');
-    });
-
-});
 
 
 
