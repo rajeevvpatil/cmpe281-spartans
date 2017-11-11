@@ -1,7 +1,7 @@
 CREATE (:Games {product_id:"1",name:"Cricket",create_date:"2017-11-03"}),(:Games {product_id:"2",name:"FIFA",create_date:"2017-11-03"}),(:Games {product_id:"3",name:"Tennis",create_date:"2017-11-03"})
 
 
-CREATE (:Games {product_id:"4",name:"Stick_Cricket",create_date:"2017-11-04"})
+CREATE (:Games {product_id:"4",name:"Stick_Cricket",create_date:"2017-11-04",url:http://<location of the image>})
 CREATE (:Games {product_id:"5",name:"Stick_Tennis",create_date:"2017-11-05"})
 CREATE (:Games {product_id:"6",name:"Stick_TableTennis",create_date:"2017-11-06"})
 
