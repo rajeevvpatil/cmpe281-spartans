@@ -2,3 +2,7 @@
 
 **Akhil Bhavirisetty**
 
+**Communication:** In order to ensure that there is no communication barrier and no team member are stuck anywhere we have a team meeting for 2 times in a week and apart from this we used to meet for every alternate days for half an hour to discuss each others progress. In order to make sure that work is progressing and not stuck anywhere.
+
+**Mohammed Athar**
+
