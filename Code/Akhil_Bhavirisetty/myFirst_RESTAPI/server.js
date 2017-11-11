@@ -10,7 +10,11 @@ const port           = 8080;
 app.use(bodyParser.urlencoded({extended:"true"}));
 
 MongoClient.connect(db.url, (err, database) => {
+<<<<<<< Updated upstream
   if (err) return console.log(err);
+=======
+  if (err) return console.log(err)
+>>>>>>> Stashed changes
 require('./app/routes')(app, database);
 
 app.listen(port, () => {
