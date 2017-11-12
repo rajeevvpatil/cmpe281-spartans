@@ -6,3 +6,6 @@
 
 **Mohammed Athar**
 
+**Courage:** As the end of the semester draws closer, things have started to get more hectic, despite this the team has maintianed a very positive outlook. Team memebers faced many challenges and were able to refactor the code according to their needs, making changes as and when required without hesitating. Everyone was persistent and determined and encouraged each other to perform to our full capacity.
+
+**Anirudh Devulapalli**
