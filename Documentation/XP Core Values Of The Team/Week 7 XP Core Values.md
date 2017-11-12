@@ -6,3 +6,7 @@
 
 **Mohammed Athar**
 
+**Simplicity:** This week, we discussed on many things on how to proceed with creating cluster and deploying modules to cloud. Everyone in the team pointed out complexities and brainstormed possible simple ways to tacke the challenges.
+
+**Saiteja Desu**
+
