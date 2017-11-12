@@ -6,7 +6,12 @@
 
 **Mohammed Athar**
 
+
 **Simplicity:** This week, we discussed on many things on how to proceed with creating cluster and deploying modules to cloud. Everyone in the team pointed out complexities and brainstormed possible simple ways to tacke the challenges.
 
 **Saiteja Desu**
 
+
+**Courage:** As the end of the semester draws closer, things have started to get more hectic, despite this the team has maintianed a very positive outlook. Team memebers faced many challenges and were able to refactor the code according to their needs, making changes as and when required without hesitating. Everyone was persistent and determined and encouraged each other to perform to our full capacity.
+
+**Anirudh Devulapalli**
