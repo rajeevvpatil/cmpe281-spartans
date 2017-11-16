@@ -30,7 +30,7 @@ var signup_schema = new mongoose.Schema({
 
 var Users = mongoose.model('Users', signup_schema);
 
-router.post('/signup', function (req,res) {
+router.post('/register', function (req,res) {
     console.log('inside signup');
     var myData = new Users(req.body);
     console.log("Inside post" +myData);
