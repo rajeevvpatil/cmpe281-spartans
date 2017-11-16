@@ -5,6 +5,9 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
+var expressValidator = require('express-validator');
+var mongo = require('mongodb');
+var LocalStrategy = require('passport-local').Strategy;
 var router = express.Router();
 var passport = require('passport');
 var flash    = require('connect-flash');
@@ -32,10 +35,51 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use(session({ secret: 'ilovescotchscotchyscotchscotch' })); // session secret
+app.use(session({
+    secret : 'secret',
+    saveUninitialized: true,
+    resave: true
+}));
+
+
+
+
 app.use(passport.initialize());
-app.use(passport.session()); // persistent login sessions
-app.use(flash()); // use connect-flash for flash messages stored in session
+app.use(passport.session());
+
+// Express Validator
+app.use(expressValidator({
+    errorFormatter: function(param, msg, value) {
+        var namespace = param.split('.')
+            , root    = namespace.shift()
+            , formParam = root;
+
+        while(namespace.length) {
+            formParam += '[' + namespace.shift() + ']';
+        }
+        return {
+            param : formParam,
+            msg   : msg,
+            value : value
+        };
+    }
+}));
+
+app.use(flash());
+
+
+//Global Variables
+
+app.use(function (req,res,next) {
+    res.locals.success_msg =req.flash('success_msg');
+    res.locals.error_msg =req.flash('error_msg');
+    res.locals.error =req.flash('error');
+    res.locals.user = req.user || null;
+    next();
+});
+
+
+
 
 app.use('/', index);
 app.use('/users', users);
