@@ -12,6 +12,11 @@ router.get('/signup', function(req, res) {
     console.log('inside GET signup');
 });
 
+router.get('/login', function(req, res) {
+    res.render('login', { title: 'Login Page:' });
+});
+
+
 
 var signup_schema = new mongoose.Schema({
     firstname : String,
@@ -22,7 +27,7 @@ var signup_schema = new mongoose.Schema({
     password: String
 });
 
-var Users = mongoose.model('Users', signup_schema);
+var Users = module.exports= mongoose.model('Users', signup_schema);
 
 function createUser(newUser, callback){
     bcrypt.genSalt(10, function(err, salt) {
@@ -33,6 +38,24 @@ function createUser(newUser, callback){
     });
 }
 
+function getUserByUsername(email, callback){
+    console.log('inside getuserbyusername function');
+    var query = {email : email};
+    Users.findOne(query, callback);
+}
+
+function getUserById(id, callback){
+    console.log('inside getuserbyid function');
+    Users.findById(id, callback);
+}
+
+function comparePassword(candidatePassword, hash, callback){
+    console.log('inside comparepswd function');
+    bcrypt.compare(candidatePassword, hash, function(err, isMatch) {
+        if(err) throw err;
+        callback(null, isMatch);
+    });
+}
 
 
 
@@ -85,6 +108,48 @@ if (errors) {
     res.redirect('/login');
 }});
 
+
+passport.use(new LocalStrategy({usernameField:"email", passwordField:"password"},
+    function(email, password, done){
+        console.log('inside passport use');
+        getUserByUsername(email, function(err, users){
+            //rest of the code
+            if(err) throw err;
+            if(!users){
+                return done(null, false, {message: 'Invalid User'});
+            }
+            comparePassword(password, users.password, function(err, isMatch){
+                if(err) throw err;
+                if(isMatch){
+                    return done(null, users);
+                } else {
+                    return done(null, false, {message: 'Invalid Password'});
+                }
+
+
+            })
+
+        });
+    }));
+
+
+
+passport.serializeUser(function(users, done) {
+    console.log('Inside serilaizeuser');
+    done(null, users.id);
+});
+
+passport.deserializeUser(function(id, done) {
+    console.log('Inside deserilaizeuser');
+    getUserById(id, function(err, users) {
+        done(err, users);
+    });
+});
+
+
+router.post('/authenticate',
+
+    passport.authenticate('local',{ successRedirect : '/', failureRedirect : '/login', failureFlash: true}));
 
 
 /*
