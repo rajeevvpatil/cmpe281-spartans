@@ -1847,7 +1847,7 @@ pre code {
 
 .form-control {
   display: block;
-
+  width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1;
@@ -1856,7 +1856,7 @@ pre code {
   background-image: none;
   background-clip: padding-box;
   border: 1px solid #ced4da;
-  border-radius: 0.25rem;
+  border-radius: 0.50rem;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
 }
 
@@ -1991,6 +1991,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .form-group {
   margin-bottom: 1rem;
+
 }
 
 .form-text {
@@ -2009,7 +2010,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
 
 .form-row > .col,
 .form-row > [class*="col-"] {
-  padding-right: 5px;
+  padding-right: 10px;
   padding-left: 5px;
 }
 
