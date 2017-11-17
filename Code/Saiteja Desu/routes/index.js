@@ -9,9 +9,7 @@ var session      = require('express-session');
 
 var LocalStrategy   = require('passport-local').Strategy;
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Game Cart' });
-});
+
 
 /*GET Signup page*/
 router.get('/signup', function(req, res, next) {

@@ -8,14 +8,20 @@ var LocalStrategy = require('passport-local').Strategy;
 
 
 router.get('/signup', function(req, res) {
-    res.render('signup', { title: 'Sign Up Page:' });
+    res.sendStatus(200);
+ //   res.render('signup', { title: 'Sign Up Page:' });
     console.log('inside GET signup');
 });
 
 router.get('/login', function(req, res) {
-    res.render('login', { title: 'Login Page:' });
+    res.sendStatus(200);
+ //   res.render('login', { title: 'Login Page:' });
 });
 
+router.get('/', ensureAuthenticated, function(req, res, next) {
+    res.sendStatus(200);
+ //   res.render('index', { title: 'Game Cart' });
+});
 
 
 var signup_schema = new mongoose.Schema({
@@ -57,7 +63,15 @@ function comparePassword(candidatePassword, hash, callback){
     });
 }
 
-
+function ensureAuthenticated(req, res, next){
+    if(req.isAuthenticated()){
+        return next();
+    } else {
+        res.send('Please Log in');
+        //req.flash('error_msg','You are not logged in');
+      //  res.redirect('/users/login');
+    }
+}
 
 router.post('/register', function (req,res) {
 var firstname = req.body.firstname;
@@ -80,9 +94,8 @@ req.checkBody('password2', 'Passwords do not match').equals(req.body.password2);
 var errors = req.validationErrors();
 
 if (errors) {
-    res.render('signup', {
-        errors: errors
-    });
+     res.sendStatus(400);
+    // res.render('signup', { errors: errors    });
 } else {
     console.log('5');
     var newUser = new Users({
@@ -105,7 +118,9 @@ if (errors) {
 
     req.flash('success_msg', 'Successfully Registered');
     console.log('6');
-    res.redirect('/login');
+    res.sendStatus(200);
+    res.send('Successfully Registered');
+  //  res.redirect('/login');
 }});
 
 
@@ -146,29 +161,31 @@ passport.deserializeUser(function(id, done) {
     });
 });
 
-
+router.post('/authenticate',
+    passport.authenticate('local'),
+    function(req, res) {
+        // If this function gets called, authentication was successful.
+        // `req.user` contains the authenticated user.
+        res.sendStatus(200);
+        res.send('Authentication Passed');
+  //      res.redirect('/');
+    });
+/*
 router.post('/authenticate',
 
     passport.authenticate('local',{ successRedirect : '/', failureRedirect : '/login', failureFlash: true}));
-
-
-/*
-router.post('/register', function (req,res) {
-    console.log('inside signup');
-    var myData = new Users(req.body);
-    console.log("Inside post" +myData);
-    console.log(
-        'you have reached inside create a user ',
-        JSON.stringify(req.body)
-    );
-    myData.save(function (err,myData) {
-        if(err){return next (err);}
-        res.send('Successfull');
-    });
-
-});
 */
 
+router.get('/logout', function(req, res){
+    req.logout();
+
+    res.sendStatus(200);
+
+    res.send('logged out');
+ //   req.flash('success_msg', 'You are logged out');
+
+ //   res.redirect('/users/login');
+});
 
 
 

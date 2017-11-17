@@ -16,7 +16,7 @@ var session      = require('express-session');
 
 mongoose.connect('mongodb://localhost:27017/UserLog');
 
-var index = require('./routes/index');
+//var index = require('./routes/index');
 var users = require('./routes/users');
 //var login = require('./routes/login');
 var signup = require('./routes/signup');
@@ -81,7 +81,7 @@ app.use(function (req,res,next) {
 
 
 
-app.use('/', index);
+app.use('/', signup);
 app.use('/users', users);
 //app.use('/login', login);
 app.use('/signup', signup);
