@@ -10,8 +10,8 @@
 ### Absent: 
 ---
 ### Discussion points:
-1. Front end integration bugging.
-2. Final touches and chnges made to the project
+1. Front end integration and debugging.
+2. Final touches and changes made to the project
 ---
 ### Things to do this week:
 Resolve any remining issues
