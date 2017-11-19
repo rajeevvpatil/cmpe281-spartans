@@ -3,6 +3,6 @@
                    
 **Mohammed Athar**
 
-**RESPECT:**Nobody on the team was made to feel unappreciated or ignored, every opinion and idea was respected and valued. Team members listened to each others views and opinions without passing ridicule. Team members strove to ensure that project will be of highest quality and to ensure that no delays would take place. Respect was also ensured by properly adopting the other four XP values.
+**RESPECT:** Nobody on the team was made to feel unappreciated or ignored, every opinion and idea was respected and valued. Team members listened to each others views and opinions without passing ridicule. Team members strove to ensure that project will be of highest quality and to ensure that no delays would take place. Respect was also ensured by properly adopting the other four XP values.
 
 **Anirudh Devulapalli**
