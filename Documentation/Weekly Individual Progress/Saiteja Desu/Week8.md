@@ -1,0 +1,1 @@
+Successfully debugged login and authentication module, and created node cluster in aws. Worked on integration of Login/signup module with Product catalog module
