@@ -5,9 +5,7 @@ const CRC32          = require('crc-32');
 var amqp = require('amqplib/callback_api'); //This is the RabbitMQ protocol to communicate with queues
 var cors = require('cors');
 var path = require('path');
-
-
-const app            = express();
+var app  = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 
@@ -20,8 +18,6 @@ app.get('/', function (req, res) {
   contents = fs.readFileSync('sliderImages.json', 'utf8');
   res.end(contents);
 });
-
-//app.listen(process.env.PORT || 8080);
 
 const port = 8000;
 
@@ -43,7 +39,8 @@ app.listen(port, () => {
     console.log("The New Short URL is "+short_url);
 
     //To connect to rabbitMQ docker Container
-    amqp.connect('amqp://172.17.0.2', function(err, conn) {
+    //amqp.connect('amqp://172.17.0.2', function(err, conn) {
+    amqp.connect('amqp://some-rabbit', function(err, conn) {
       console.log('connected to rabbitmq');
         conn.createChannel(function(err, ch) {
           var queue_name = "new shortlinks";
@@ -65,5 +62,6 @@ app.listen(port, () => {
     
     //Response to be sent
     res.send({"Short URL": "shrink.com/"+short_url});
+    //res.redirect('https://spartans-hackethon.herokuapp.com/items',{short_url});
       
   });
